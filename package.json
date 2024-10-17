@@ -2,20 +2,34 @@
   "name": "recrutamento",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
+  "homepage": "https://github.com/Jamile-Silva/Recrutamento",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "expo build:web",
+    "deploy": "gh-pages -d web-build"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~3.2.3",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/stack": "^6.4.1",
     "expo": "~51.0.28",
     "expo-status-bar": "~1.12.1",
+    "firebase": "^10.14.1",
+    "firebase-admin": "^12.6.0",
+    "framer-motion": "^11.11.7",
     "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react-dom": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-animatable": "^1.4.0",
+    "react-native-web": "~0.19.10",
+    "react-use": "^17.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "gh-pages": "^6.2.0"
   },
   "private": true
 }
